@@ -1,0 +1,20 @@
+<extension xmlns="http://ns.adobe.com/air/extension/2.5">
+    <id>com.adobe.gyroscope</id>
+    <versionNumber>1.0.0</versionNumber>
+    <platforms>
+        <platform name="QNX-x86">
+            <applicationDeployment>
+                <nativeLibrary>libGyroscope-x86.so</nativeLibrary>
+                <initializer>ExtensionInitializer</initializer>
+                <finalizer>ExtensionFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>
+        <platform name="QNX-ARM">
+            <applicationDeployment>
+                <nativeLibrary>libGyroscope-arm.so</nativeLibrary>
+                <initializer>ExtensionInitializer</initializer>
+                <finalizer>ExtensionFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>
+    </platforms>
+</extension>
